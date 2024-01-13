@@ -21,7 +21,6 @@
       </div>
     </div>      
   </div>
-  <Modal></Modal>
 </template>
 
 <script setup>
@@ -29,12 +28,10 @@
   import { ref } from "vue";
   import { FwbButton } from 'flowbite-vue'
   import { PaperClipIcon } from '@heroicons/vue/24/solid'
-  import Modal from "@/components/Modal.vue";
   import { navigateTo } from "nuxt/app";
 
 const metricsData = useMetrics();
 
-// Execute os dois posts ao carregar a página
 const uploadFile = async () => {
   try {
     const formData = new FormData();
